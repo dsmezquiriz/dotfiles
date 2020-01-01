@@ -5,3 +5,69 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+alias lr='ls -hartl'
+alias g='grep -i'
+alias get='curl -OL'
+alias t2='tree -d -L 2'
+
+alias ga='git add .'
+alias gc='git commit -m'
+alias gcm='git commit -m "clean up"'
+alias gcrm='git commit -m "new rails app"'
+alias gpom='git push origin master'
+
+#HEROKU
+
+alias gphm='git push heroku master'
+alias hm='heroku run rails db:migrate'
+alias ho='heroku open'
+alias hl='heroku logs --tail'
+alias hc='heroku run rails c'
+
+#LEWAGON
+
+alias r='rake'
+alias c='clear'
+
+#GIT SHORTCUTS
+
+
+alias o="open"
+alias x="exit"
+alias g="git"
+alias gs='git status'
+alias gd='git diff'
+alias g-='git checkout -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias -- -="cd -"
+  function up {
+        if [[ "$#" < 1 ]] ; then
+            cd ..
+        else
+            CDSTR=""
+            for i in {1..$1} ; do
+                CDSTR="../$CDSTR"
+            done
+            cd $CDSTR
+        fi
+    }
+
+#BUNDLE
+
+alias bi="bundle install"
+alias bu="bundle update"
+
+
+#RAILS
+
+alias rcs="rails console sandbox"
+alias rr="rails routes"
+alias rc="rails console"
+alias rdrop="rails db:drop"
+alias rcreate="rails db:create"
+alias rmigrate="rails db:migrate"
+alias rrollback="rails db:rollback"
+alias rreset="rails db:reset"
+alias rs="rails server"

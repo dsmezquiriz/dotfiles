@@ -1,16 +1,29 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "ApplySyntax",
-    "BracketHighlighter",
-    "Emmet",
-    "Git",
-    "GitGutter",
-    "JSX",
-    "Package Control",
-    "SCSS",
-    "ERB Snippets"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"All Autocomplete",
+		"ApplySyntax",
+		"BracketHighlighter",
+		"GitGutter",
+		"Seti_UX"
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"ApplySyntax",
+		"BracketHighlighter",
+		"Emmet",
+		"ERB Snippets",
+		"Git",
+		"GitGutter",
+		"JSX",
+		"Monokai - Spacegray",
+		"Package Bundler",
+		"Package Control",
+		"SCSS",
+		"Seti_UI",
+		"Seti_UX"
+	]
 }
